@@ -1,6 +1,8 @@
 # Modules
 
 import os
+import random
+import sys
 
 # Helper Functions
 
@@ -13,7 +15,7 @@ def clear():
 
 def main_menu():
 
-    os.system('cls')
+    clear()
 
     options = {
         0: new_game,
@@ -29,35 +31,36 @@ def main_menu():
     print('3 - More Info')
     print('4 - Exit')
 
-    userInput = int(input('> '))
+    userInput = int(input('\n> '))
+
+    clear()
 
     if userInput in options:
         options[userInput]()
 
 
 def new_game():
-    os.system('cls')
     print('New game')
 
 
 def load_game():
-    os.system('cls')
     print('Loading game')
 
 
 def save_game():
-    os.system('cls')
     print('Saving game')
 
 
 def more_info():
-    os.system('cls')
-    print('Coming Soon...')
+    print("In this game, you'll navigate through a post-apocalyptic world affected by a deadly virus outbreak.")
+    print("Your goal is to survive and discover who you truly are.")
+    print("Be careful with your choices as they may affect the outcome of the game.")
 
 
 def exit_game():
-    os.system('cls')
-    print('Exiting Game')
+    # TODO: generate random exit message using random module
+    print('Embrace the unkown. Farewell, Survivor')
+    sys.exit()
 
 
 main_menu()
