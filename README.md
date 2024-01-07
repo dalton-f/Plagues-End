@@ -43,7 +43,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project is a full text-based adventure game made in JavaScript set in a post-apocalyptic world. You must survive, explore, and discover who you truly are. In this project there are:
+This project is a full text-based adventure game made in Python set in a post-apocalyptic world. You must survive, explore, and discover who you truly are. In this project there are:
 
 * Multiple Endings
 * Exploration driven story
