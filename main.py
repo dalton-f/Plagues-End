@@ -4,6 +4,11 @@ import os
 import random
 import sys
 
+# Global Variables
+
+exit_messages = ['Embrace the unkown. Farewell, Survivor', 'Dive into the abyss of possibilities. Farewell, Wanderer.',
+                 'Embrace the beauty of the unseen. Farewell, Explorer.', 'Walk the path where questions bloom. Farewell, Survivor.']
+
 # Helper Functions
 
 
@@ -59,11 +64,12 @@ def more_info():
     print("In this game, you'll navigate through a post-apocalyptic world affected by a deadly virus outbreak.")
     print("Your goal is to survive and discover who you truly are.")
     print("Be careful with your choices as they may affect the outcome of the game.")
+    print("Made by Dalton. Inspired by Fallout 4")
 
 
 def exit_game():
-    # TODO: generate random exit message using random module
-    print('Embrace the unkown. Farewell, Survivor')
+    exit_message = random.choice(exit_messages)
+    print(exit_message)
     sys.exit()
 
 
